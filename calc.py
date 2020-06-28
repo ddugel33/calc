@@ -8,7 +8,7 @@ def application(environ, start_response):
     sum = 0
     mul = 0
 
-    if ''not in [f_num, s_num]:
+    if f_num.isdigit() and s_num.isdigit():
        	a = int(f_num)
  	b = int(s_num)
         sum = a + b
